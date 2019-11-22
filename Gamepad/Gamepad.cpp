@@ -9,8 +9,8 @@ Gamepad::Gamepad()
     _led2(new PwmOut(PTC2)),
     _led3(new PwmOut(PTC3)),
     _led4(new PwmOut(PTA1)),
-    _led5(new PwmOut(PTC11)),
-    _led6(new PwmOut(PTC10)),
+    _led5(new PwmOut(PTC10)),
+    _led6(new PwmOut(PTC11)),
 
     _button_A(new InterruptIn(PTC7)),
     _button_B(new InterruptIn(PTC9)),
@@ -29,8 +29,6 @@ Gamepad::Gamepad()
     _speaker(new AnalogOut(DAC0_OUT)),
     _ticker(new Ticker()),
     _timeout(new Timeout()),
-
-
 
     _x0(0),
     _y0(0)
